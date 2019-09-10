@@ -27,20 +27,20 @@ The user enters a start and a destination word after which the program finds the
 
 Here is some sample output of the word ladder program:
 
-Enter start word (RETURN to quit): work
-Enter destination word: play
-Found ladder: work fork form foam flam flay play
-work pork perk peak pean plan play
-work pork perk peak peat plat play
-work pork perk pert peat plat play
-work pork porn pirn pian plan play
-work pork port pert peat plat play
-work word wood pood plod ploy play
-work worm form foam flam flay play
-work worn porn pirn pian plan play
-work wort bort boat blat plat play
-work wort port pert peat plat play
-work wort wert pert peat plat play
+Enter start word (RETURN to quit): work<br />
+Enter destination word: play<br />
+Found ladder: work fork form foam flam flay play<br />
+work pork perk peak pean plan play<br />
+work pork perk peak peat plat play<br />
+work pork perk pert peat plat play<br />
+work pork porn pirn pian plan play<br />
+work pork port pert peat plat play<br />
+work word wood pood plod ploy play<br />
+work worm form foam flam flay play<br />
+work worn porn pirn pian plan play<br />
+work wort bort boat blat plat play<br />
+work wort port pert peat plat play<br />
+work wort wert pert peat plat play<br />
 
 Finding a word ladder is a specific instance of the shortest path problem, where the challenge is to find the shortest path from a starting position to a goal. Shortest path problems come up in a variety of situations such as packet routing, robot motion planning, social networks, studying gene mutations, and more. One approach for finding a shortest path is the classic algorithm known as breadth-first search. A breadth-first search searches outward from the start in a radial fashion until it hits the goal. For word ladder, this means first examining those ladders that represent “one hop” (i.e. one changed letter) from the start. If any of these reaches the destination, we’re done. If not, the search now examines all ladders that add one more hop (i.e. two changed letters). By expanding the search at each step, all one-hop ladders are examined before two-hops, and three-hop ladders only considered if none of the one-hop nor two-hop ladders worked out, thus the algorithm is guaranteed to find the shortest successful ladder.
 
